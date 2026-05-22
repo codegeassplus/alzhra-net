@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إرشادات الاستخدام - شبكة الزهر</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+body {
+    background: #09070f;              /* أسود مائل للبنفسجي الداكن جداً */
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* هيدر */
+header {
+    text-align: center;
+    padding: 40px 10px;
+    animation: fade 1s ease;
+}
+header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #b388ff, #7c4dff); /* تدرج بنفسجي نيون */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 8px rgba(124, 77, 255, 0.4));
+}
+header p {
+    color: #b388ff;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* قسم الإرشادات */
+.guide-section {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.guide-card {
+    background: #14111c; /* خلفية الكرت بنفسجي غامق */
+    border: 1px solid rgba(124, 77, 255, 0.25); /* حدود بنفسجية شفافة */
+    border-radius: 20px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: pop 0.8s forwards;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.guide-card:hover {
+    transform: translateY(-8px);
+    border-color: #9d4edd; /* بنفسجي مضيء عند التمرير */
+    box-shadow: 0 15px 35px rgba(124, 77, 255, 0.15);
+}
+.guide-card h2 {
+    color: #e0aaff; /* بنفسجي فاتح مريح للقراءة */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.guide-card h2::before {
+    content: "✦";
+    margin-left: 10px;
+    color: #7c4dff;
+}
+.guide-content {
+    color: #e2e0e6;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+.guide-content strong {
+    color: #fff;
+    border-bottom: 1px dashed #7c4dff; /* تمييز نصوص التنبيه */
+}
+.guide-content span {
+    color: #b388ff;
+    font-weight: bold;
+}
+.guide-content .warning {
+    color: #ffb74d; /* لون برتقالي دافئ للتنبيه يتناسق مع البنفسجي */
+    background: rgba(255, 183, 77, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.guide-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+.guide-list li {
+    padding: 8px 15px;
+    border-right: 3px solid #7c4dff; /* حافة بنفسجية للقائمة */
+    background: rgba(124, 77, 255, 0.05);
+    margin-bottom: 8px;
+    color: #eee;
+    font-size: 1rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: #5a5466;
+    border-top: 1px solid #1a1523;
+}
+
+/* أنيميشن */
+@keyframes fade { 0% {opacity:0;} 100% {opacity:1;} }
+@keyframes pop { 0% {opacity:0; transform:translateY(20px);} 100% {opacity:1; transform:translateY(0);} }
+
+/* تحسين للهواتف */
+@media (max-width: 480px) {
+    header h1 { font-size: 2rem; }
+    .guide-card { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>إرشادات الاستخدام - شبكة الزهر ⚡</h1>
+    <p>دليلك الذكي لتوفير البيانات والحفاظ على الرصيد</p>
+</header>
+
+<section class="guide-section">
+
+    <div class="guide-card" style="animation-delay:0s;">
+        <h2>1. التحديثات التلقائية</h2>
+        <div class="guide-content">
+            <p>أول خطوة لتوفير رصيدك هي <strong>تعطيل التحديثات التلقائية</strong> من متجر التطبيقات (Play Store / App Store)، حيث أن التحديثات قد تبدأ فجأة وتستهلك الباقة بالكامل.</p>
+        </div>
+    </div>
+
+    <div class="guide-card" style="animation-delay:0.1s;">
+        <h2>2. فيسبوك (Facebook)</h2>
+        <div class="guide-content">
+            <p>تطبيق <span>Facebook الأساسي</span> يستهلك كميات ضخمة من البيانات في الخلفية. الخيار الأفضل هو استخدام <strong>Facebook Lite</strong> المصمم خصيصاً للتوفير.</p>
+        </div>
+    </div>
+
+    <div class="guide-card" style="animation-delay:0.2s;">
+        <h2>3. ضبط جودة اليوتيوب</h2>
+        <div class="guide-content">
+            <p>تجنب ترك جودة الفيديو <strong>"تلقائية"</strong>. قم بضبطها يدوياً على <span class="warning">360p أو 480p</span> لموازنة الاستهلاك. هذا ينطبق أيضاً على تيك توك وإنستقرام.</p>
+        </div>
+    </div>
+
+    <div class="guide-card" style="animation-delay:0.3s;">
+        <h2>4. تحميل الوسائط التلقائي</h2>
+        <div class="guide-content">
+            <p>تأكد من إغلاق خاصية "التحميل التلقائي" في التطبيقات التالية لتتحكم في ما يتم تحميله:</p>
+            <ul class="guide-list">
+                <li>واتساب وتليغرام (هام جداً)</li>
+                <li>سناب شات وإنستغرام</li>
+                <li>تيك توك وفيسبوك</li>
+            </ul>
+            <p>يمكنك العثور على هذا الخيار في إعدادات <span>"استخدام البيانات والتخزين"</span> داخل كل تطبيق.</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    &copy; 2026 جميع الحقوق محفوظة لشبكة الزهر
+</footer>
+
+</body>
+</html>
