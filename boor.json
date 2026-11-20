@@ -1,16 +1,23 @@
 [
+  {
+    "ver": "8"
+  },
+
+  
+  {
+    "link": "https://htmlpreview.github.io/?https://github.com/codegeassplus/alzhra-net/blob/8dcabaf4f144f472aa0db856e77f708bd66b397c/update.html"
+  },
+
 
 
   {
-    
-    "ver": "6"
- 
-},
+    "link_in": "https://github.com/codegeassplus/alzhra-net/releases/latest/download/v6.apk"
+  },
+
+
+
+
 {
-    
-    "link": "https://www.mediafire.com/file/fhbq9pnesu8x67g/%25D8%25B4%25D8%25A8%25D9%2583%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B2%25D9%2587%25D8%25B1_5.apk/file"
- 
-}
-
-
+    "link_out": "https://htmlpreview.github.io/?https://github.com/codegeassplus/alzhra-net/blob/8dcabaf4f144f472aa0db856e77f708bd66b397c/update.html"
+  }
 ]
